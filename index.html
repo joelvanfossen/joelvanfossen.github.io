@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Your Name – Academic Homepage</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Academic homepage of Your Name." />
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background-color: #f7f7f7;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem 1rem 3rem;
+      background: #ffffff;
+    }
+
+    header {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      border-bottom: 1px solid #e0e0e0;
+      padding-bottom: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .portrait {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      background: #ddd;
+      margin-right: 1.5rem;
+      flex-shrink: 0;
+      object-fit: cover;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+
+    header h2 {
+      margin: 0.3rem 0 0.6rem;
+      font-size: 1rem;
+      font-weight: 500;
+      color: #555;
+    }
+
+    .contact a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      margin-bottom: 2rem;
+    }
+
+    h3 {
+      margin-top: 0;
+      border-bottom: 1px solid #e0e0e0;
+      padding-bottom: 0.3rem;
+      font-size: 1.2rem;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    li {
+      margin-bottom: 0.4rem;
+    }
+
+    .pub-title {
+      font-weight: 600;
+    }
+
+    .pub-authors {
+      font-style: italic;
+    }
+
+    .pub-venue {
+      color: #555;
+    }
+
+    .footer {
+      font-size: 0.85rem;
+      color: #777;
+      border-top: 1px solid #e0e0e0;
+      padding-top: 1rem;
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .portrait {
+        margin-bottom: 1rem;
+        margin-right: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <!-- Replace src with your own photo URL, or remove the img tag if you don't want a photo -->
+      <img class="portrait" src="your-photo.jpg" alt="Your Name portrait" />
+
+      <div>
+        <h1>Your Name</h1>
+        <h2>Your Position (e.g., PhD Student, Department of X, University of Y)</h2>
+        <div class="contact">
+          <div>Email: <a href="mailto:you@university.edu">you@university.edu</a></div>
+          <div>Office: Room 123, Building, University</div>
+          <div>
+            <a href="https://scholar.google.com/">Google Scholar</a> ·
+            <a href="https://orcid.org/">ORCID</a> ·
+            <a href="https://github.com/yourusername">GitHub</a> ·
+            <a href="CV.pdf">CV</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section id="about">
+      <h3>About</h3>
+      <p>
+        I am a <strong>PhD student</strong> in the Department of X at University of Y,
+        advised by Prof. Z. My research interests include A, B, and C.
+        I am particularly interested in [1–2 sentences about your main research focus].
+      </p>
+    </section>
+
+    <section id="research">
+      <h3>Research Interests</h3>
+      <ul>
+        <li>Topic A (e.g., Machine Learning, Formal Methods, etc.)</li>
+        <li>Topic B</li>
+        <li>Topic C</li>
+      </ul>
+    </section>
+
+    <section id="publications">
+      <h3>Publications</h3>
+      <ul>
+        <li>
+          <span class="pub-title">Title of Your Awesome Paper</span><br />
+          <span class="pub-authors">Your Name, Coauthor Name</span><br />
+          <span class="pub-venue">Conference/Journal, Year</span><br />
+          <a href="paper.pdf">[PDF]</a>
+          <a href="https://arxiv.org/">[arXiv]</a>
+          <a href="https://github.com/yourusername/project">[Code]</a>
+        </li>
+        <li>
+          <span class="pub-title">Another Paper Title</span><br />
+          <span class="pub-authors">Your Name, Coauthor Name</span><br />
+          <span class="pub-venue">Workshop, Year</span><br />
+          <a href="#">[PDF]</a>
+        </li>
+      </ul>
+    </section>
+
+    <section id="teaching">
+      <h3>Teaching</h3>
+      <ul>
+        <li>TA, Course Name (Term, Year)</li>
+        <li>TA, Another Course (Term, Year)</li>
+      </ul>
+    </section>
+
+    <section id="service">
+      <h3>Service</h3>
+      <ul>
+        <li>Reviewer for Conference A, Journal B</li>
+        <li>Organizer, Workshop C</li>
+      </ul>
+    </section>
+
+    <section id="misc">
+      <h3>Miscellaneous</h3>
+      <p>
+        Short note about hobbies, open-source projects, or anything else you want to share.
+      </p>
+    </section>
+
+    <div class="footer">
+      Last updated: <!-- You can manually update this date --> December 2025
+    </div>
+  </div>
+</body>
+</html>
