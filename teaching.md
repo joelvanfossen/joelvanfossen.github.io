@@ -11,9 +11,9 @@ Since March 2023, I have served as an Assistant Professor in the Department of G
 * Introduction to Ethics
 * Introduction to Philosophy
 * History of Philosophy
-* Philosophy and Political Thought
-* Existentialism
+* Political Philosophy
 * Topics in Philosophy (Aesthetics)
+* Existentialism
 * Advanced Topics in Philosophy I (Philosophy of Love)
 * Advanced Topics in Philosophy II (Metaethics and the Problem of Evil)
 
