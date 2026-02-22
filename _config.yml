@@ -3,16 +3,16 @@ title: "Joel A. Van Fossen"
 name: "Joel A. Van Fossen"
 description: "Assistant Professor of Philosophy"
 url: "https://joelvanfossen.github.io"
-baseurl: "" 
+baseurl: ""
 repository: "joelvanfossen/joelvanfossen.github.io"
-remote_theme: "academicpages/academicpages.github.io"
+remote_theme: "mmistakes/minimal-mistakes"
 
-# Author Profile (This builds the sidebar)
+# Author Profile (Sidebar)
 author:
   name: "Joel A. Van Fossen"
-  avatar: ""
+  avatar: "/images/HUD_277.jpg"
   bio: "Assistant Professor of Philosophy"
-  location: "Kawasaki, Japan"
+  location: ""
   links:
     - label: "Research Map"
       icon: "fas fa-fw fa-link"
@@ -29,7 +29,12 @@ plugins:
   - jekyll-remote-theme
   - jekyll-feed
   - jekyll-sitemap
+  - jekyll-include-cache
 
-# Specific AcademicPages Settings
-include: [".htaccess"]
-exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rantfile", "mkmf.log", "setup.php", "LICENSE.txt", "README.md"]
+# Minimal Mistakes Specifics
+locale: "en-US"
+footer:
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/joelvanfossen"
