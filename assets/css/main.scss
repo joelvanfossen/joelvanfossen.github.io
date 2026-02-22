@@ -1,15 +1,23 @@
 ---
-# This empty front matter is required for Jekyll to process the file
+# Front matter is required
 ---
 
 @import "minimal-mistakes";
 
-/* Remove the faded/whitened effect on the sidebar avatar */
-.author__avatar {
+/* Force sidebar avatar to 100% visibility at all times */
+.sidebar .author__avatar, 
+.author__avatar img {
   opacity: 1 !important;
   filter: none !important;
+  -webkit-filter: none !important;
 }
 
+/* Specifically kill the transition effect that causes the "fade" */
+.author__avatar {
+  transition: none !important;
+}
+
+/* Ensure hover doesn't trigger any changes */
 .author__avatar:hover {
   opacity: 1 !important;
   filter: none !important;
