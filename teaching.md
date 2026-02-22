@@ -13,8 +13,9 @@ Since March 2023, I have served as an **Assistant Professor** in the Department 
 * **History of Philosophy**
 * **Philosophy and Political Thought**
 * **Existentialism**
-* **Topics in Philosophy**
-* **Advanced Topics in Philosophy I & II**
+* **Topics in Philosophy (Aesthetics)**
+* **Advanced Topics in Philosophy I (Philosophy of Love)**
+* * **Advanced Topics in Philosophy II (Metaethics and the Problem of Evil)**
 
 ---
 
