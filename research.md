@@ -8,9 +8,7 @@ author_profile: true
 ### Books
 * Van Fossen, Joel A. and Daniel Star. _Appreciation_ (Manuscript under contract). Oxford University Press.
 
-* Van Fossen, Joel A. _Nietzsche on Love_ (Manuscript under contract). Cambridge University Press.
-
-* * Part of the Cambridge Elements Series
+* Van Fossen, Joel A. _Nietzsche on Love (Cambridge Elements Series)_ (Manuscript under contract). Cambridge University Press.
 
 ### Articles
 * Van Fossen, Joel A. "_Ressentiment_ as a Reactive Attitude" (Forthcoming). In _The Moral Psychology of Resentment_, edited by Antti Kauppinen and Max Lewis. Rowman & Littlefield.
