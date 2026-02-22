@@ -6,7 +6,7 @@ author_profile: true
 ---
 
 ### Current Courses (Hosei University)
-Since March 2023, I have served as an Assistant Professor in the Department of Global and Interdisciplinary Studies (GIS) at Hosei University. My primary teaching responsibilities include:
+Since March 2023, I have served as an Assistant Professor in the Department of Global and Interdisciplinary Studies (GIS) at Hosei University. I recently received the best teacher award, a university-wide award based on student nominations. My primary teaching responsibilities include:
 
 * Introduction to Ethics
 * Introduction to Philosophy
