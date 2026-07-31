@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Joel A. Van Fossen — Philosophy, Hosei University</title>
+<meta name="description" content="Joel A. Van Fossen is Assistant Professor of Philosophy in the Department of Global and Interdisciplinary Studies at Hosei University, Tokyo. He works on the philosophy of love, aesthetic appreciation, and the history of ethics.">
+<meta name="author" content="Joel A. Van Fossen">
+
+<!-- Social preview. EDIT: replace the URL and image once the site is live. -->
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Joel A. Van Fossen — Philosophy, Hosei University">
+<meta property="og:description" content="Philosophy of love, aesthetic appreciation, and the history of ethics.">
+<meta property="og:url" content="https://www.joelvanfossen.com/">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&family=Spectral:ital,wght@0,300;0,400;0,600;1,400&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --paper:#F0F1ED;
+  --panel:#E5E7E1;
+  --ink:#191B1C;
+  --ink-2:#5C6260;
+  --rule:#CBCEC7;
+  --plum:#68486F;
+  --plum-2:#4E3554;
+
+  --display:"Bodoni Moda",Georgia,serif;
+  --body:"Spectral",Georgia,serif;
+  --util:"IBM Plex Sans",system-ui,-apple-system,sans-serif;
+}
+
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font-family:var(--body);
+  font-size:17px;
+  line-height:1.62;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:var(--plum);text-decoration:none;border-bottom:1px solid rgba(104,72,111,.35);}
+a:hover{color:var(--plum-2);border-bottom-color:var(--plum-2);}
+a:focus-visible{outline:2px solid var(--plum);outline-offset:3px;border-radius:2px;}
+
+.skip{position:absolute;left:-9999px;}
+.skip:focus{left:1rem;top:1rem;background:var(--ink);color:var(--paper);padding:.6rem 1rem;z-index:99;border:0;}
+
+/* ---------- shell ---------- */
+.shell{
+  max-width:1140px;
+  margin:0 auto;
+  padding:0 1.6rem 6rem;
+  display:grid;
+  grid-template-columns:1fr;
+  gap:0;
+}
+@media (min-width:900px){
+  .shell{grid-template-columns:255px 1fr;column-gap:5rem;padding:0 2.5rem 8rem;}
+}
+
+/* ---------- left rail ---------- */
+.rail{padding:3rem 0 2.5rem;}
+@media (min-width:900px){
+  .rail{position:sticky;top:0;align-self:start;height:100vh;overflow-y:auto;padding:4.5rem 0 3rem;}
+}
+.portrait{
+  width:118px;height:148px;
+  background:var(--panel);
+  border:1px solid var(--rule);
+  margin-bottom:1.5rem;
+  object-fit:cover;
+  display:block;
+  filter:grayscale(1) contrast(1.03);
+}
+.rail-name{
+  font-family:var(--display);
+  font-weight:500;
+  font-size:1.6rem;
+  line-height:1.12;
+  margin:0 0 .7rem;
+  letter-spacing:.01em;
+}
+.rail-role{
+  font-family:var(--util);
+  font-size:.78rem;
+  line-height:1.55;
+  color:var(--ink-2);
+  margin:0 0 2rem;
+}
+.rail-role strong{font-weight:600;color:var(--ink);display:block;}
+
+nav ul{list-style:none;margin:0 0 2rem;padding:0;border-top:1px solid var(--rule);}
+nav li{border-bottom:1px solid var(--rule);}
+nav a{
+  display:block;
+  padding:.55rem 0;
+  font-family:var(--util);
+  font-size:.82rem;
+  letter-spacing:.02em;
+  color:var(--ink);
+  border-bottom:0;
+  transition:padding-left .18s ease,color .18s ease;
+}
+nav a:hover{padding-left:.5rem;color:var(--plum);}
+
+.rail-links{list-style:none;margin:0;padding:0;font-family:var(--util);font-size:.8rem;line-height:1.9;}
+.rail-links a{border-bottom:0;color:var(--ink-2);}
+.rail-links a:hover{color:var(--plum);}
+
+/* ---------- main ---------- */
+main{padding-top:1rem;min-width:0;}
+@media (min-width:900px){main{padding-top:4.5rem;}}
+
+.hero{padding-bottom:3rem;border-bottom:1px solid var(--rule);}
+.eyebrow{
+  font-family:var(--util);
+  font-size:.68rem;
+  font-weight:600;
+  letter-spacing:.19em;
+  text-transform:uppercase;
+  color:var(--ink-2);
+  margin:0 0 1.6rem;
+}
+.thesis{
+  font-family:var(--display);
+  font-weight:400;
+  font-size:clamp(1.85rem,4.4vw,3rem);
+  line-height:1.16;
+  letter-spacing:-.005em;
+  margin:0 0 1.8rem;
+  max-width:19ch;
+}
+.thesis em{font-style:italic;color:var(--plum);}
+.lede{max-width:60ch;margin:0;color:var(--ink);}
+.lede + .lede{margin-top:1.1rem;}
+
+section{padding:3.2rem 0;border-bottom:1px solid var(--rule);}
+section:last-of-type{border-bottom:0;}
+.sec-head{
+  font-family:var(--util);
+  font-size:.68rem;
+  font-weight:600;
+  letter-spacing:.19em;
+  text-transform:uppercase;
+  color:var(--ink-2);
+  margin:0 0 1.9rem;
+}
+.prose{max-width:62ch;}
+.prose p{margin:0 0 1.05rem;}
+.prose p:last-child{margin-bottom:0;}
+
+/* ---------- books ---------- */
+.book{
+  display:grid;
+  gap:.4rem;
+  padding:1.4rem 0;
+  border-top:1px solid var(--rule);
+  max-width:62ch;
+}
+.book:first-of-type{border-top:0;padding-top:0;}
+.book h3{
+  font-family:var(--display);
+  font-style:italic;
+  font-weight:400;
+  font-size:1.42rem;
+  line-height:1.2;
+  margin:0;
+}
+.book .meta{font-family:var(--util);font-size:.78rem;color:var(--ink-2);}
+.book p{margin:.3rem 0 0;color:var(--ink-2);font-size:.96rem;}
+
+/* ---------- publications: year spine ---------- */
+.pubs{margin:0;}
+.pub{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:.3rem;
+  padding:1.35rem 0;
+  border-top:1px solid var(--rule);
+}
+.pub:first-child{border-top:0;padding-top:0;}
+@media (min-width:620px){
+  .pub{grid-template-columns:5.6rem 1fr;column-gap:2.1rem;}
+  .pub-year{border-right:1px solid var(--rule);padding-right:1.1rem;}
+}
+.pub-year{
+  font-family:var(--display);
+  font-size:1.4rem;
+  line-height:1.1;
+  color:var(--ink-2);
+  font-variant-numeric:lining-nums;
+}
+.pub-year span{
+  display:block;
+  font-family:var(--util);
+  font-size:.62rem;
+  font-weight:600;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  margin-top:.35rem;
+  color:var(--ink-2);
+}
+.pub-body{min-width:0;}
+.pub-title{
+  font-family:var(--body);
+  font-weight:600;
+  font-size:1.06rem;
+  line-height:1.4;
+  margin:0 0 .25rem;
+}
+.pub-where{font-size:.94rem;color:var(--ink-2);margin:0;}
+.pub-where cite{font-style:italic;}
+.pub-links{font-family:var(--util);font-size:.76rem;margin-top:.5rem;display:flex;gap:1.1rem;flex-wrap:wrap;}
+.pub-links a{border-bottom:0;}
+.pub-links a::after{content:" →";}
+
+details{margin-top:.6rem;}
+summary{
+  cursor:pointer;
+  font-family:var(--util);
+  font-size:.76rem;
+  letter-spacing:.02em;
+  color:var(--plum);
+  list-style:none;
+  display:inline-flex;
+  align-items:center;
+  gap:.4rem;
+  padding:.15rem 0;
+}
+summary::-webkit-details-marker{display:none;}
+summary::before{
+  content:"+";
+  font-size:.9rem;
+  line-height:1;
+  transition:transform .2s ease;
+  display:inline-block;
+}
+details[open] summary::before{content:"–";}
+summary:hover{color:var(--plum-2);}
+summary:focus-visible{outline:2px solid var(--plum);outline-offset:3px;border-radius:2px;}
+.abstract{
+  margin:.7rem 0 0;
+  padding:1rem 1.15rem;
+  background:var(--panel);
+  font-size:.95rem;
+  line-height:1.6;
+  color:var(--ink);
+  max-width:64ch;
+  animation:reveal .28s ease both;
+}
+@keyframes reveal{from{opacity:0;transform:translateY(-4px);}to{opacity:1;transform:none;}}
+
+/* ---------- simple lists ---------- */
+.plain{list-style:none;margin:0;padding:0;max-width:62ch;}
+.plain li{
+  padding:.85rem 0;
+  border-top:1px solid var(--rule);
+  font-size:.99rem;
+}
+.plain li:first-child{border-top:0;padding-top:0;}
+.plain .note{display:block;font-family:var(--util);font-size:.76rem;color:var(--ink-2);margin-top:.2rem;}
+
+/* ---------- contact ---------- */
+.contact-grid{display:grid;gap:1.4rem;max-width:62ch;}
+@media (min-width:620px){.contact-grid{grid-template-columns:1fr 1fr;gap:2rem;}}
+.contact-grid h3{
+  font-family:var(--util);
+  font-size:.7rem;
+  font-weight:600;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  color:var(--ink-2);
+  margin:0 0 .4rem;
+}
+.contact-grid p{margin:0;font-size:.98rem;}
+
+footer{
+  padding:2.5rem 0 0;
+  font-family:var(--util);
+  font-size:.74rem;
+  color:var(--ink-2);
+  border-top:1px solid var(--rule);
+  margin-top:3rem;
+}
+
+/* ---------- entrance ---------- */
+.rail,.hero{animation:rise .6s ease both;}
+.hero{animation-delay:.06s;}
+@keyframes rise{from{opacity:0;transform:translateY(10px);}to{opacity:1;transform:none;}}
+
+@media (prefers-reduced-motion:reduce){
+  *{animation:none !important;transition:none !important;}
+  html{scroll-behavior:auto;}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="shell">
+
+  <!-- ================= LEFT RAIL ================= -->
+  <aside class="rail">
+    <img class="portrait" src="assets/images/HUD_295.jpeg" alt="Joel A. Van Fossen" onerror="this.style.visibility='hidden'">
+
+    <p class="rail-name">Joel A.<br>Van Fossen</p>
+    <p class="rail-role">
+      <strong>Assistant Professor of Philosophy</strong>
+      Global and Interdisciplinary Studies<br>
+      Hosei University, Tokyo
+    </p>
+
+    <nav aria-label="Sections">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#books">Books</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#talks">Talks</a></li>
+        <li><a href="#teaching">Teaching</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <ul class="rail-links">
+      <!-- EDIT: add your real email address -->
+      <li><a href="mailto:you@hosei.ac.jp">Email</a></li>
+      <li><a href="assets/images/cv.pdf">Curriculum vitae (PDF)</a></li>
+      <li><a href="https://philpeople.org/profiles/joel-a-van-fossen">PhilPeople</a></li>
+      <li><a href="https://orcid.org/0000-0003-1718-7003">ORCID</a></li>
+      <li><a href="https://researchmap.jp/joelavanfossen">researchmap</a></li>
+    </ul>
+  </aside>
+
+  <!-- ================= MAIN ================= -->
+  <main id="main">
+
+    <div class="hero">
+      <p class="eyebrow">Ethics · Philosophy of love · Aesthetics · Nietzsche</p>
+      <h1 class="thesis">What makes love a <em>fitting</em> response to a person?</h1>
+      <p class="lede">Most of my work starts from that question. We treat some people as worth our time, attention, and care, and others as not — and we take those judgments to be more than arbitrary. I am interested in what could make them correct.</p>
+    </div>
+
+    <section id="about">
+      <h2 class="sec-head">About</h2>
+      <div class="prose">
+        <p>I am an Assistant Professor in the <a href="https://www.hosei.ac.jp/gis/">Department of Global and Interdisciplinary Studies</a> at Hosei University in Tokyo, specializing in normative ethics.</p>
+        <p>My current research concerns the normative dimensions of love: whether love can be merited, what makes it fitting, and how loving relationships bear on a person's well-being. Alongside this, I am co-authoring a book on aesthetic appreciation with <a href="https://www.daniel-star.net/">Daniel Star</a>. I also work in the history of ethics — chiefly on Nietzsche, and on nineteenth- and twentieth-century British moral theory, especially Henry Sidgwick.</p>
+        <p>I received my Ph.D. from Boston University in 2023, with a dissertation on reasons for love. Before that I completed an M.A. at Georgia State University and a B.A. in philosophy and classical studies at St. Norbert College. I have taught at Boston University, Boston College, and Northeastern University.</p>
+      </div>
+    </section>
+
+    <section id="books">
+      <h2 class="sec-head">Books</h2>
+
+      <div class="book">
+        <h3>Nietzsche on Love</h3>
+        <p class="meta">Cambridge Elements · Cambridge University Press · Under contract</p>
+        <!-- EDIT: one or two sentences on the argument. -->
+        <p>A short book on Nietzsche's treatment of love, drawing his scattered remarks on eros, friendship, and self-reverence into a single account.</p>
+      </div>
+
+      <div class="book">
+        <h3>Appreciation</h3>
+        <p class="meta">With Daniel Star · Oxford University Press · Under contract</p>
+        <!-- EDIT: one or two sentences on the argument. -->
+        <p>A book-length account of appreciation as a distinctive response to value, and of what appreciating something well contributes to a life.</p>
+      </div>
+    </section>
+
+    <section id="publications">
+      <h2 class="sec-head">Publications</h2>
+
+      <div class="pubs">
+
+        <article class="pub">
+          <div class="pub-year">2024<span>Article</span></div>
+          <div class="pub-body">
+            <h3 class="pub-title">Finite Love</h3>
+            <p class="pub-where"><cite>Inquiry</cite>, published online 2024.</p>
+            <div class="pub-links">
+              <a href="https://doi.org/10.1080/0020174X.2024.2427067">Published version</a>
+              <a href="https://philarchive.org/rec/VANFLL-3">Preprint</a>
+            </div>
+            <details>
+              <summary>Abstract</summary>
+              <p class="abstract">Love can be merited, and it is merited by a person's intrinsically valuable qualities. What matters is not that such qualities can be ranked against one another, but that they are gradable: to merit love is to meet a threshold of value. Discerning where those thresholds lie, and who meets them, takes practical wisdom. Since our capacity to love is finite, such judgments belong at the center of philosophizing about love rather than at its margins.</p>
+            </details>
+          </div>
+        </article>
+
+        <article class="pub">
+          <div class="pub-year">2022<span>Article</span></div>
+          <div class="pub-body">
+            <h3 class="pub-title">Nietzsche on Self-Reverence</h3>
+            <p class="pub-where"><cite>The Journal of Nietzsche Studies</cite> 53 (2): 181–201.</p>
+            <div class="pub-links">
+              <a href="https://doi.org/10.5325/jnietstud.53.2.0181">Published version</a>
+            </div>
+            <details>
+              <summary>Abstract</summary>
+              <p class="abstract">Respect is ambiguous between a constraint on practical reason and a person-directed pro-attitude, as Darwall has argued. That ambiguity creates trouble for self-respect: in the pro-attitude sense, it lacks warrant. I turn to Nietzsche's notion of self-reverence, which can serve as a replacement for Kantian self-respect in that second sense.</p>
+            </details>
+          </div>
+        </article>
+
+        <article class="pub">
+          <div class="pub-year">2019<span>Article</span></div>
+          <div class="pub-body">
+            <h3 class="pub-title">Nietzsche and Shame</h3>
+            <p class="pub-where"><cite>The Journal of Nietzsche Studies</cite> 50 (2): 233–249.</p>
+            <div class="pub-links">
+              <a href="https://doi.org/10.5325/jnietstud.50.2.0233">Published version</a>
+            </div>
+            <details>
+              <summary>Abstract</summary>
+              <!-- EDIT: paste your published abstract here. -->
+              <p class="abstract">On Nietzsche's view, shame plays a fundamental role in regulating social relations, though it also carries serious costs for the person who feels it.</p>
+            </details>
+          </div>
+        </article>
+
+        <article class="pub">
+          <div class="pub-year">2019<span>Article</span></div>
+          <div class="pub-body">
+            <h3 class="pub-title">Nietzsche, Self-Disgust, and Disgusting Morality</h3>
+            <p class="pub-where"><cite>The Journal of Nietzsche Studies</cite> 50 (1): 79–105.</p>
+            <div class="pub-links">
+              <a href="https://doi.org/10.5325/jnietstud.50.1.0079">Published version</a>
+            </div>
+            <details>
+              <summary>Abstract</summary>
+              <p class="abstract">Two questions about disgust in Nietzsche: how moral disgust harms, and when it is nonetheless a fitting response. Self-disgust is dangerous because it is characteristic of ascetic morality — but disgust is conditionally fitting insofar as it provokes an immediate adverse reaction to ascetic moral systems, which I call disgusting moralities. I compare Nietzsche's analysis with the Terror Management and Animal-Nature Reminder theories, and argue that his view is compatible with the Entanglement and Co-Opt theses.</p>
+            </details>
+          </div>
+        </article>
+
+        <article class="pub">
+          <div class="pub-year">2018<span>Review</span></div>
+          <div class="pub-body">
+            <h3 class="pub-title">Review of <cite>Contesting Nietzsche</cite></h3>
+            <p class="pub-where"><cite>The Journal of Nietzsche Studies</cite> 49 (2): 295–300.</p>
+          </div>
+        </article>
+
+      </div>
+
+      <h2 class="sec-head" style="margin-top:3rem;">Forthcoming</h2>
+      <ul class="plain">
+        <li>
+          Ressentiment as a Reactive Attitude
+          <span class="note">In <cite>The Moral Psychology of Resentment</cite>, ed. Antti Kauppinen and Max Lewis. Rowman &amp; Littlefield. — <a href="https://philarchive.org/rec/VANRAA-14">Preprint</a></span>
+        </li>
+      </ul>
+    </section>
+
+    <section id="talks">
+      <h2 class="sec-head">Selected talks</h2>
+      <!-- EDIT: check dates and add or remove entries. -->
+      <ul class="plain">
+        <li>Nietzsche on Eros <span class="note">Invited · APA Pacific Division Meeting, 2026</span></li>
+        <li>Aesthetic Appreciation, Agency, and Respect <span class="note">Invited · APA Eastern Division Meeting, 2026</span></li>
+        <li>Love, Wellbeing, and Rational Requirement <span class="note">APA Eastern Division Meeting, 2026</span></li>
+        <li>Appreciation, Inquiry, and Deliberation: Exploring the Structure of Three Processes <span class="note">EDIT: add venue and year</span></li>
+      </ul>
+    </section>
+
+    <section id="teaching">
+      <h2 class="sec-head">Teaching</h2>
+      <div class="prose">
+        <p>I teach across ethics and the history of philosophy at Hosei. Recent and recurring courses:</p>
+      </div>
+      <!-- EDIT: adjust this list to your actual course roster. -->
+      <ul class="plain">
+        <li>Philosophy of Love <span class="note">Advanced undergraduate seminar</span></li>
+        <li>Political Philosophy</li>
+        <li>Philosophy of Mind</li>
+        <li>Introduction to Ethics</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2 class="sec-head">Contact</h2>
+      <div class="contact-grid">
+        <div>
+          <h3>Email</h3>
+          <!-- EDIT: your address -->
+          <p><a href="mailto:you@hosei.ac.jp">you@hosei.ac.jp</a></p>
+        </div>
+        <div>
+          <h3>Post</h3>
+          <p>Faculty of Global and Interdisciplinary Studies<br>Hosei University<br>Tokyo, Japan</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2026 Joel A. Van Fossen. Photograph by Daniel Star.</p>
+    </footer>
+
+  </main>
+</div>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Person",
+  "name":"Joel A. Van Fossen",
+  "jobTitle":"Assistant Professor of Philosophy",
+  "affiliation":{"@type":"CollegeOrUniversity","name":"Hosei University"},
+  "url":"https://www.joelvanfossen.com/",
+  "sameAs":[
+    "https://philpeople.org/profiles/joel-a-van-fossen",
+    "https://researchmap.jp/joelavanfossen"
+  ]
+}
+</script>
+</body>
+</html>
